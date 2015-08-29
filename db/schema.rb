@@ -11,12 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150818222048) do
+ActiveRecord::Schema.define(version: 20150829185700) do
 
   create_table "algorithm_names", force: :cascade do |t|
     t.string   "algorithm_name", limit: 255
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+  end
+
+  create_table "data_table_data_item_linkings", force: :cascade do |t|
+    t.integer  "data_table_data_id",              limit: 4
+    t.integer  "data_table_data_item_linking_id", limit: 4
+    t.datetime "created_at",                                null: false
+    t.datetime "updated_at",                                null: false
   end
 
   create_table "data_table_items", force: :cascade do |t|
