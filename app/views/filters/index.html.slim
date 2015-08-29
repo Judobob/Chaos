@@ -1,0 +1,21 @@
+h1 Listing filters
+
+table
+  thead
+    tr
+      th Filter name
+      th
+      th
+      th
+
+  tbody
+    - @filters.each do |filter|
+      tr
+        td = filter.filter_name
+        td = link_to 'Show', filter
+        td = link_to 'Edit', edit_filter_path(filter)
+        td = link_to 'Destroy', filter, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Filter', new_filter_path

@@ -1,0 +1,9 @@
+p#notice = notice
+
+p
+  strong Algorithm name:
+  = @algorithm_name.algorithm_name
+
+= link_to 'Edit', edit_algorithm_name_path(@algorithm_name)
+'|
+= link_to 'Back', algorithm_names_path

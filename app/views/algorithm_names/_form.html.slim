@@ -1,0 +1,12 @@
+= form_for @algorithm_name do |f|
+  - if @algorithm_name.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@algorithm_name.errors.count, "error")} prohibited this algorithm_name from being saved:"
+      ul
+        - @algorithm_name.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :algorithm_name
+    = f.text_field :algorithm_name
+  .actions = f.submit

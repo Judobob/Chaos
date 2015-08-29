@@ -1,0 +1,9 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @webscrape.name
+
+= link_to 'Edit', edit_webscrape_path(@webscrape)
+'|
+= link_to 'Back', webscrapes_path

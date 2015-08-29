@@ -1,0 +1,21 @@
+h1 Listing webscrapes
+
+table
+  thead
+    tr
+      th Name
+      th
+      th
+      th
+
+  tbody
+    - @webscrapes.each do |webscrape|
+      tr
+        td = webscrape.name
+        td = link_to 'Show', webscrape
+        td = link_to 'Edit', edit_webscrape_path(webscrape)
+        td = link_to 'Destroy', webscrape, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Webscrape', new_webscrape_path

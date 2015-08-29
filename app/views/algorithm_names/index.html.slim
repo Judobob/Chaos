@@ -1,0 +1,21 @@
+h1 Listing algorithm_names
+
+table
+  thead
+    tr
+      th Algorithm name
+      th
+      th
+      th
+
+  tbody
+    - @algorithm_names.each do |algorithm_name|
+      tr
+        td = algorithm_name.algorithm_name
+        td = link_to 'Show', algorithm_name
+        td = link_to 'Edit', edit_algorithm_name_path(algorithm_name)
+        td = link_to 'Destroy', algorithm_name, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Algorithm name', new_algorithm_name_path

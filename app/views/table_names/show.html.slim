@@ -1,0 +1,9 @@
+p#notice = notice
+
+p
+  strong Table name:
+  = @table_name.table_name
+
+= link_to 'Edit', edit_table_name_path(@table_name)
+'|
+= link_to 'Back', table_names_path

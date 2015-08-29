@@ -1,0 +1,12 @@
+= form_for @datat_table_datum do |f|
+  - if @datat_table_datum.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@datat_table_datum.errors.count, "error")} prohibited this datat_table_datum from being saved:"
+      ul
+        - @datat_table_datum.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .actions = f.submit

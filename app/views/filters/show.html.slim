@@ -1,0 +1,9 @@
+p#notice = notice
+
+p
+  strong Filter name:
+  = @filter.filter_name
+
+= link_to 'Edit', edit_filter_path(@filter)
+'|
+= link_to 'Back', filters_path

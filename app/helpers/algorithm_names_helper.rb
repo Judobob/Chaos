@@ -1,0 +1,2 @@
+module AlgorithmNamesHelper
+end
