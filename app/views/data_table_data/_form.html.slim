@@ -1,0 +1,8 @@
+= simple_form_for(@data_table_datum) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+
+  .form-actions
+    = f.button :submit

@@ -52,16 +52,25 @@ gem 'prawn-rails'
 
 gem 'simple_form'
 
+gem 'country_select'
+
 gem 'thin'
 
 gem "paperclip", "~> 4.3"
 
+#omni-auth
+
 gem 'omniauth-facebook'
 
+gem 'omniauth-twitter', :github => 'arunagw/omniauth-twitter'
+
+gem 'omniauth-github'
+
+gem 'omniauth-google-oauth2'
+
+#facebook
+
 gem "koala", "~> 2.2"
-
-gem 'country_select'
-
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  resources :data_table_data
   resources :webscrapes
   devise_for :users
-  resources :datat_table_data
   resources :filters
   resources :algorithm_names
   resources :table_names

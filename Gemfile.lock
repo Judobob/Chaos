@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/arunagw/omniauth-twitter.git
+  revision: 343120bf99b5dbe0515f651e82ba128609ce1a13
+  specs:
+    omniauth-twitter (1.2.1)
+      json (~> 1.3)
+      omniauth-oauth (~> 1.1)
+
+GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: a889e2d6e6527b94234b88f0c6b635d29d8e7ae8
   specs:
@@ -152,6 +160,7 @@ GEM
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     ntlm-http (0.1.1)
+    oauth (0.4.7)
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
@@ -163,6 +172,15 @@ GEM
       rack (~> 1.0)
     omniauth-facebook (2.0.1)
       omniauth-oauth2 (~> 1.2)
+    omniauth-github (1.1.2)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-google-oauth2 (0.2.6)
+      omniauth (> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-oauth (1.1.0)
+      oauth
+      omniauth (~> 1.0)
     omniauth-oauth2 (1.3.1)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
@@ -298,6 +316,9 @@ DEPENDENCIES
   mysql2
   nokogiri
   omniauth-facebook
+  omniauth-github
+  omniauth-google-oauth2
+  omniauth-twitter!
   paperclip (~> 4.3)
   prawn-rails
   rails (= 4.2.1)

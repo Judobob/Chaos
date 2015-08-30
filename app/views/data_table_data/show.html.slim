@@ -1,0 +1,9 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @data_table_datum.name
+
+= link_to 'Edit', edit_data_table_datum_path(@data_table_datum)
+'|
+= link_to 'Back', data_table_data_path
